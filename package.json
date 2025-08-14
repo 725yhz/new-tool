@@ -1,0 +1,27 @@
+{
+  "name": "js-function-v0",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "files": [
+    "src/utils",
+    "src/lib/index.js"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "babel src -d lib --copy-files",
+    "prepublishOnly": "npm run build"
+  },
+  "main": "src/lib/index.js",
+  "author": "yhz",
+  "license": "ISC",
+  "description": "js常用函数",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "vite": "^7.0.6",
+    "vite-plugin-vue-devtools": "^8.0.0"
+  }
+}
